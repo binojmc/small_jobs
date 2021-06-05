@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Small Jobs',
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: kPrimaryColor, //Colors.white,
         //fontFamily: "", //to be added later
         textTheme: TextTheme(
           bodyText1: TextStyle(color: kTextColor),
