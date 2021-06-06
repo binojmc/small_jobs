@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:small_jobs/components/default_button.dart';
 import 'package:small_jobs/constants.dart';
 
 import 'splash_content.dart';
@@ -51,16 +52,28 @@ class _BodyState extends State<Body> {
             ),
             Expanded(
               flex: 2,
-              child: Column(
-                children: <Widget>[
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: List.generate(
-                      splashData.length,
-                      (index) => buildDot(index: index),
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 20,
+                ),
+                child: Column(
+                  children: <Widget>[
+                    Spacer(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(
+                        splashData.length,
+                        (index) => buildDot(index: index),
+                      ),
                     ),
-                  )
-                ],
+                    Spacer(flex: 3),
+                    DefaultButton(
+                      text: "Continue",
+                      press: () {},
+                    ),
+                    Spacer(),
+                  ],
+                ),
               ),
             )
           ],
