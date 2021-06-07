@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:small_jobs/size_config.dart';
 
 import '../../../constants.dart';
 
@@ -18,7 +19,7 @@ class SplashContent extends StatelessWidget {
         Text(
           "Small Jobs",
           style: TextStyle(
-            fontSize: 36,
+            fontSize: getProportionateScreenWidth(36),
             color: kTextColor,
             fontWeight: FontWeight.bold,
           ),
@@ -34,8 +35,8 @@ class SplashContent extends StatelessWidget {
           image: AssetImage(
             image,
           ),
-          height: 265,
-          width: 300,
+          height: getProportionateScreenHeight(265),
+          width: getProportionateScreenWidth(300),
         ),
       ],
     );

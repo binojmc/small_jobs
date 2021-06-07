@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:small_jobs/components/default_button.dart';
 import 'package:small_jobs/constants.dart';
+import 'package:small_jobs/size_config.dart';
 
 import 'splash_content.dart';
 
@@ -54,7 +55,7 @@ class _BodyState extends State<Body> {
               flex: 2,
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                  horizontal: 20,
+                  horizontal: getProportionateScreenWidth(20),
                 ),
                 child: Column(
                   children: <Widget>[

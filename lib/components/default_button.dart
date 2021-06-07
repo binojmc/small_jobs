@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:small_jobs/size_config.dart';
 
 import '../constants.dart';
 
@@ -22,7 +23,7 @@ class DefaultButton extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20)),
               primary: kSecondaryColor,
               textStyle: TextStyle(
-                fontSize: 24,
+                fontSize: getProportionateScreenWidth(18),
                 color: kTextColor,
               )),
           onPressed: () {},
